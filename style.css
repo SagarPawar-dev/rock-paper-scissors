@@ -1,0 +1,154 @@
+
+body{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card{
+    background-color: #374151;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.scoreBoard{
+    display: flex;
+    justify-content: space-around;
+}
+
+.player{
+    color: #22c55e;
+}
+
+.player p,
+.computer p{
+    font-size: 80px;
+    margin: 10px;
+}
+
+.player h3,
+.computer h3{
+    font-size: 32px;
+}
+
+.computer{
+    color: #ef4444;
+}
+
+.buttons{
+    font-size: 50px;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttons button{
+    font-size: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    transition: 0.2s;
+
+}
+
+.buttons button:hover{
+    transform: scale(1.1);
+}
+
+.buttons button:active{
+    transform: scale(0.95);
+}
+.gameOver{
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.6);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-color: #374151;
+    width: 300px;
+    color: white;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.gameover h2{
+    font-size: 40px;
+}
+.hidden{
+    display: none;
+}
+
+#playAgain{
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.github-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link img{
+    width: 24px;
+    height: 24px;
+
+    filter: invert(1);
+}
+
+.github-link:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+
+    .scoreBoard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttons button{
+        width: 90px;
+        height: 90px;
+        font-size: 40px;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+}

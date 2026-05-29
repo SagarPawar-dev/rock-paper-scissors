@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    
+    <div class="card">
+        <div class="choose">
+            <h2 id="resultText">Choose your weapon </h2>
+            <p id="roundText">First to score 5 points wins the game</p>
+        </div>
+
+        <div class="scoreBoard">
+            <div class="player">
+                <p id="playerTurn">？</p>
+                <h3>Player: <span id="player-score">0</span></h3>
+            </div>
+            <div class="computer">
+                <p id="computerTurn">？</p>
+                <h3>computer: <span id="computer-score">0</span></h3>
+            </div>
+        </div>
+    </div> 
+
+    <div class="buttons">
+        <button id="rock">✊</button>
+        <button id="paper">✋</button>
+        <button id="scissors">✌️</button>
+    </div>
+
+    <div class="gameOver hidden">
+        <h2 id="winnerText"></h2>
+        <button id="playAgain">Play again</button>
+    </div>
+
+    <footer>
+    <p>© 2026 Sagar Pawar</p>
+
+    <a href="https://github.com/sagarpawar-dev"
+       target="_blank"
+       class="github-link">
+
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        alt="GitHub">GitHub
+    </a>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
